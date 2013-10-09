@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4511" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3745"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ytE-U7-oJP"/>
+                        <viewControllerLayoutGuide type="bottom" id="lwX-Ss-mSA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGK-0S-Vie">
+                                <rect key="frame" x="100" y="57" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="yyC-x4-07i"/>
+                                </constraints>
+                                <state key="normal" title="Find">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="find:" destination="2" eventType="touchUpInside" id="jZH-qm-wbI"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ready" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPW-tp-0vw">
+                                <rect key="frame" x="136" y="122" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98K-QN-qG7">
+                                <rect key="frame" x="105" y="183" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Zy3-ea-dk0"/>
+                                </constraints>
+                                <state key="normal" title="Read AIO0">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestReadAio0:" destination="2" eventType="touchUpInside" id="9ys-oX-fKL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCW-xN-I6e">
+                                <rect key="frame" x="104" y="240" width="79" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="eRo-yg-dc7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="V" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grj-x8-haQ">
+                                <rect key="frame" x="178" y="240" width="19" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="s3R-6z-Weh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96136209239130432" green="0.96136209239130432" blue="0.96136209239130432" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="98K-QN-qG7" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" id="8h7-oC-9vo"/>
+                            <constraint firstItem="rPW-tp-0vw" firstAttribute="top" secondItem="3" secondAttribute="top" constant="122" id="DqI-Wg-2CI"/>
+                            <constraint firstItem="Grj-x8-haQ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="240" id="MT4-q4-qHe"/>
+                            <constraint firstItem="98K-QN-qG7" firstAttribute="top" secondItem="3" secondAttribute="top" constant="183" id="bx6-Qy-fkT"/>
+                            <constraint firstAttribute="trailing" secondItem="Grj-x8-haQ" secondAttribute="trailing" constant="122" id="dFM-qc-IZ7"/>
+                            <constraint firstItem="gGK-0S-Vie" firstAttribute="top" secondItem="3" secondAttribute="top" constant="57" id="fsZ-fu-i2c"/>
+                            <constraint firstItem="bCW-xN-I6e" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="104" id="m1G-sr-OBK"/>
+                            <constraint firstItem="Grj-x8-haQ" firstAttribute="baseline" secondItem="bCW-xN-I6e" secondAttribute="baseline" id="oTZ-mZ-TH7"/>
+                            <constraint firstItem="98K-QN-qG7" firstAttribute="centerX" secondItem="rPW-tp-0vw" secondAttribute="centerX" id="qUt-fQ-kGF"/>
+                            <constraint firstItem="rPW-tp-0vw" firstAttribute="centerX" secondItem="gGK-0S-Vie" secondAttribute="centerX" id="s9W-vx-zsg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adcValue" destination="bCW-xN-I6e" id="S4t-Dz-gro"/>
+                        <outlet property="statusMessage" destination="rPW-tp-0vw" id="M7f-c8-FiM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="39"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
